@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
 
 const UserLayout = () => {
   return (
@@ -7,16 +6,14 @@ const UserLayout = () => {
       <div className="nav">
         <ul>
           <li>
-            <Link to={`${1}/edit`}>edit</Link>
+            <a href="">edit</a>
           </li>
           <li>
-            <Link to="/">logout</Link>
+            <a href="">logout</a>
           </li>
         </ul>
       </div>
-      <div className="content">
-        <Outlet />
-      </div>
+      <div className="content">content</div>
     </div>
   );
 };

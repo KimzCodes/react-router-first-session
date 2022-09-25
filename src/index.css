@@ -21,6 +21,12 @@ body {
   width: 100%;
 }
 
+.header a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .header h1 {
   margin: 20px 5px;
 }
@@ -56,6 +62,7 @@ body {
   justify-content: center;
 }
 
+/* design two */
 .wrapper2 {
   display: flex;
   height: 100vh;
