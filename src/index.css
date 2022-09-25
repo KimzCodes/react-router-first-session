@@ -67,7 +67,7 @@ body {
 }
 
 .content {
-  flex-grow: 3s;
+  flex-grow: 3;
 }
 .nav ul {
   list-style: none;
@@ -76,4 +76,8 @@ body {
 
 .nav li {
   margin-bottom: 10px;
+}
+
+.active {
+  color: red !important;
 }
