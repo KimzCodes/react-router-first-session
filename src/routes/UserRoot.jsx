@@ -1,6 +1,13 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 
 const UserRoot = () => {
+  const navigate = useNavigate();
+
+  const logOutHandler = () => {
+    //api
+    navigate("/", { replace: true });
+  };
+  const id = 1;
   return (
     <div className="wrapper2">
       <div className="nav">
@@ -9,11 +16,9 @@ const UserRoot = () => {
             <Link to="info">info</Link>
           </li>
           <li>
-            <Link to="1/edit">edit</Link>
+            <Link to={`${id}/edit`}>edit</Link>
           </li>
-          <li>
-            <Link to="/">logout</Link>
-          </li>
+          <li onClick={logOutHandler}>logout</li>
         </ul>
       </div>
       <div className="content">

@@ -85,7 +85,7 @@ body {
   margin-bottom: 10px;
 }
 
-.active {
-  color: red !important;
+.header .active {
+  color: red;
   font-weight: bold;
 }
